@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Comment Badges TSW Plugin Instructions and Help Documentation</title>
+<style id="onpage-pdtsw" type="text/css">
+html {box-sizing: border-box;}.clearfix:before, .clearfix:after {content: "";
+display: table;clear: both;}article, aside, details, figcaption, figure, footer, header, 
+main, menu, nav, section, summary {display: block;}body {
+font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;font-weight: normal;
+line-height: normal;margin: 0;padding: 0;background: #e9e9e9;font-size:16px;}
+header h3{padding-left: .8em;margin-top: .67em;}
+footer ul{list-style:none;position:relative;margin: 0;}
+footer ul li{display:inline-block;height: 2em;background: #f0f0f0;position: relative;
+margin-bottom: 0;}h1, h2, h3, h4{margin: 2px 0 1px 0;padding-bottom: 0;
+padding-top: 15px;font-weight: bolder;}h1{color: #646464}h1, h2, h3{color:darkcyan;}h2{margin-left: 1em;}
+.container{width: 98.8992%;margin:0 auto;display:block;height:100%;}
+.container.full{width:100%;background:#fafafa;}
+table{table-layout:fixed;width:100%;border-spacing:1px;margin-top: .444em;}
+tr{background:#f8f8f8;}
+td {padding-left:3px;}
+section{padding-left: 15px;padding-right:15px;}
+strong{color: #192}
+em{color: #078}
+.intro{color: #089;}
+.brk{color:#eee;}.aligncenter{text-align: center; margin: 2em auto;display: block;}
+@media screen and (min-width:980px){
+.left-sidebar{float: left;width: 22%;height: 100%;overflow-y: scroll;}
+.main{width: 78%;height: 100%;float:right;}
+.main:after{content: "";clear: left;width: 100%;display:table;height:1px;}}
+</style>
+</head>
+<body>
+<div class="container full">
+    <header class="container"><h1>Instructions and Support Documentation</h1></header>   
+    <aside class="left-sidebar" style="position:fixed">
+    <h2>Comment Badges</h2>
+    <nav class="nav"><ul>
+    <li><a href="#poj" title="objective of plugin">Primary Objective</a></li>
+    <li><a href="#tft" title="text fields tab">Text Fields Tab</a><ul>
+    <li><a href="#tfo" title="text field options">Text Fields Options</a></ul></li>
+    <li><a href="#at" title="advanced tab">Advanced Tab</a><ul>
+    <li><a href="#ao" title="advanced options">Advanced Options</a></li></ul></li>
+    </ul>
+    <img src="icona256x256.png" alt="CommBadge" height="200" class="aligncenter"/>
+    </aside><div class="clearfix"></div>
+
+    <div class="main">
+    <header><h3>CommBadge Plugin Outline</h3></header>   
+    <section class="container">
+        <h4 id="poj">Primary Objective</h4>
+        <table><tbody>
+        <tr><td class="intro">Plugin is designed to allow users to add labels or badges to each comment thread throughout the website blog page.
+            Labels can be used to sort comments---sort of like a category---or add a label to each comment reply to set the status of the comment.
+        </td></tr>
+        <tr><td class="brk">_</td></tr>
+        <tr><td>Labels <em>formal name of labels which are used to render labels</em></td></tr>
+        <tr><td><ul style="line-height: 1.2">
+            <li>cmbd_closed</li>
+    <li>cmbd_completed</li>
+    <li>cmbd_reviewing</li>
+    <li>cmbd_pending</li>
+    <li>cmbd_planned</li>
+    <li>cmbd_notplanned</li>
+    <li>cmbd_archived</li>
+    <li>cmbd_onhold</li>
+    <li>cmbd_release</li>
+    <li>cmbd_prerelease</li>
+    <li>cmbd_tagged</li>
+    <li>cmbd_duplicate</li>
+    <li>cmbd_backlog</li>
+    <li>cmbd_waiting</li>
+    <li><h5>These are the string names that get copied to the comments metadata box in the comments editor page.</h5></li>
+    </ul></td></tr>
+        <tr><td id="" class="brk">_</td></tr>
+        <tr><td><h3>Assigning a Label to a Comment Thread</h3></td></tr>
+        <tr><td>Assigning labels can be done by admins or editors only. Just click on EDIT of the themes comment thread you want to edit. </td></tr>
+        <tr><td><img src="spriteicons.png" title="sprite" height="200" /></td></tr>
+        <tr><td>This will take you to the comment editor page. At the bottom of the page there is a section "Comment Classification:" where you can change the label. Be sure to save comment when complete.</td></tr>
+        <tr><td>The metadata input name is "commbadge_badge" and it is stored as commentmetadata in the database.</td></tr>
+        <tr><td class="brk">_</td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        </tbody></table>    
+    </section>
+
+    <header><h3>CommBadge Plugin Settings</h3></header>   
+    <section>
+        <h4 id="tft">Text Fields</h4>
+        <table><tbody>
+        <tr><td id="txtF"><h5>Settings for this plugin are under admin menu item "Settings" > "Comment Badge."</h5></td></tr>
+        <tr><td id="s1">Heading before comment form</td></tr>
+        <tr><td id="s2">Label for badges</td></tr>
+        
+        <tr><td id="selCon">></td></tr>
+        <tr><td> </td></tr>
+        <tr><td> </td></tr>
+        <tr><td id="">></td></tr>
+        
+        </tbody></table>
+    </section>
+    <section>
+        <h4 id="tfo">Text Fields Options</h4>
+        <table><tbody>
+        <tr><td id="txtF"></td></tr>
+        <tr><td id="sO"></td></tr>
+        <tr><td></td></tr>
+        <tr><td>5</td></tr>
+        <tr><td id="chkPriv">></td></tr>
+        <tr><td>Checkbox</td></tr>
+        <tr><td></td></tr>
+        <tr><td id="selCon">></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td id=""></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        </tbody></table>
+                
+    </section>
+
+    </tbody></table>
+    </section>
+    </div>
+</div><div class="clearfix"></div>
+
+<footer class="container full">
+<ul><li><a href="#" title="go">Top</a></li></ul>
+</footer>
+</body></html>
